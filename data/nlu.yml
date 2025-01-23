@@ -7,6 +7,7 @@ nlu:
     - hello
     - hi
     - hello there
+    - Hey! How are you?
     - good morning
     - good evening
     - moin
@@ -89,3 +90,193 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_heart_health
+  examples: |
+    - I want advice on heart health
+    - How can I improve my heart health?
+    - What are some tips for a healthy heart?
+    - What should I eat for better heart health?
+    - Can you suggest some exercises for my heart?
+    - How do I reduce the risk of heart disease?
+    - What habits are good for my heart?
+    - How do I maintain a healthy heart?
+    - What foods are bad for my heart?
+    - Can you guide me on heart health?
+    - How do I lower my cholesterol?
+    - How can I control my blood pressure?
+    - Is walking good for my heart?
+    - What are signs of an unhealthy heart?
+    - How do I reduce stress for better heart health?
+
+- intent: book_appointment
+  examples: |
+    - I want to book an appointment
+    - Can I see the doctor tomorrow at [3 PM](appointment_time)?
+    - Schedule a consultation for me on [Monday](appointment_date)
+    - I need to book a check-up
+    - Can I book an appointment for next week?
+    - Is the doctor available at [10 AM](appointment_time) tomorrow?
+    - I need an appointment for a heart check-up
+    - Can I schedule a visit for [Friday](appointment_date) at [2 PM](appointment_time)?
+    - I'd like to book a time slot
+    - I want to meet the doctor
+    - Can I get an appointment for next [Monday](appointment_date)?
+    - Is there any availability this evening?
+    - I need to see the cardiologist
+    - Book an appointment for me
+    - Schedule a meeting with the heart doctor
+
+- intent: provide_symptoms
+  examples: |
+    - I have [chest pain](symptoms)
+    - I'm feeling [breathless](symptoms)
+    - My heart rate is [irregular](symptoms)
+    - I have [high blood pressure](symptoms)
+    - I'm experiencing [fatigue](symptoms)
+    - My [chest feels tight](symptoms)
+    - I feel [dizzy](symptoms)
+    - I'm having [palpitations](symptoms)
+    - I'm [short of breath](symptoms)
+    - My [blood pressure is too high](symptoms)
+    - My heart feels like it's [skipping beats](symptoms)
+    - I feel [light-headed](symptoms)
+    - I'm experiencing [nausea](symptoms)
+    - I feel [sharp pain in my chest](symptoms)
+    - My [heartbeat is very fast](symptoms)
+    - I have [swelling in my ankles](symptoms)
+    - My breathing is [shallow](symptoms)
+    - I feel [pain in my left arm](symptoms)
+    - I'm [sweating excessively](symptoms)
+    - I'm experiencing [heartburn](symptoms)
+
+
+- intent: report_emergency
+  examples: |
+    - I'm having severe chest pain
+    - My chest pain is spreading to my arm
+    - I'm feeling extremely dizzy
+    - I can't breathe properly
+    - My heart is beating very fast
+    - I feel like I'm having a heart attack
+    - My chest pain is getting worse
+    - I'm sweating heavily and feel faint
+    - My heartbeat is irregular and fast
+    - I'm experiencing extreme fatigue suddenly
+
+- intent: ask_lifestyle_changes
+  examples: |
+    - How can I improve my diet for heart health?
+    - Should I avoid salt in my meals?
+    - What are the best exercises for a healthy heart?
+    - Can yoga help my heart stay healthy?
+    - How much water should I drink daily?
+    - What foods should I avoid for heart health?
+    - How can I reduce stress to improve my heart health?
+    - Is it safe to drink alcohol occasionally?
+    - What daily habits can improve my heart condition?
+    - Can you recommend a heart-healthy diet plan?
+
+- intent: ask_medication_info
+  examples: |
+    - What medicine should I take for high blood pressure?
+    - Can you explain the side effects of [beta blockers](medication_name)?
+    - How should I take my prescribed heart medication?
+    - Is [aspirin](medication_name) safe for my heart condition?
+    - Can I take [herbal supplements](medication_name) with my heart medication?
+    - What are common medications for lowering cholesterol?
+    - Should I stop my medication if I feel better?
+    - How do I manage side effects of heart medicines?
+    - Can you explain my prescription?
+    - Are there any alternatives to my current medication?
+
+- intent: reschedule_appointment
+  examples: |
+    - I need to reschedule my appointment
+    - Can I change my appointment time to 4 PM tomorrow?
+    - I won’t be able to attend the consultation
+    - Can we postpone the appointment to next Monday?
+    - Is it possible to reschedule my check-up?
+    - I want to delay my consultation
+    - Can I book another time for my appointment?
+    - I need to change my booking
+    - Can you move my appointment to next week?
+    - Please reschedule my meeting with the doctor
+
+- intent: ask_diet_advice
+  examples: |
+    - What foods are best for a healthy heart?
+    - Should I include more [fruits and vegetables](diet_preference) in my diet?
+    - Is [red meat](diet_preference) bad for my heart?
+    - How much [sodium](diet_preference) is safe for a heart patient?
+    - Can I eat [dairy products](diet_preference) with my condition?
+    - Are [nuts](diet_preference) good for heart health?
+    - Should I avoid [sugar](diet_preference) completely?
+    - What [oils](diet_preference) are heart-friendly for cooking?
+    - Can I eat [eggs](diet_preference) with high cholesterol?
+    - What [snacks](diet_preference) are healthy for my heart?
+
+- intent: follow_up_symptoms
+  examples: |
+    - My chest pain is still there after medication
+    - The breathlessness has reduced but not gone completely
+    - My blood pressure readings are fluctuating
+    - I'm still feeling dizzy
+    - The irregular heartbeat is less frequent now
+    - My energy levels are still very low
+    - I feel slightly better, but the pain is still there
+    - The medication helped, but I feel tired
+    - I'm still experiencing mild discomfort in my chest
+    - The symptoms come and go
+
+- intent: ask_general_info
+  examples: |
+    - What is a heart attack?
+    - Can you explain what causes high blood pressure?
+    - What is cholesterol and how does it affect the heart?
+    - Why is stress harmful to heart health?
+    - What are the signs of a stroke?
+    - How does exercise improve heart health?
+    - What is coronary artery disease?
+    - Can you explain what arrhythmia is?
+    - What are common causes of heart failure?
+    - How does smoking affect the heart?
+
+- intent: seek_emotional_support
+  examples: |
+    - I'm scared about my heart condition
+    - I feel anxious about my symptoms
+    - I'm worried about my health
+    - Can you reassure me about my treatment?
+    - I'm stressed and need support
+    - I feel overwhelmed with my condition
+    - Can you help me stay positive about my recovery?
+    - I'm scared of surgery
+    - I need some encouragement to stay healthy
+    - I feel hopeless about my heart condition
+
+- intent: check_doctor_availability
+  examples: |
+    - Is the doctor available today?
+    - Can I meet the cardiologist in the evening?
+    - Is there any availability tomorrow morning?
+    - When is the next available slot with the doctor?
+    - Can I book a consultation right now?
+    - What are the doctor's working hours?
+    - Is the clinic open on weekends?
+    - Can I meet the doctor without an appointment?
+    - How soon can I see a heart specialist?
+    - Is the doctor available online?
+
+- intent: express_gratitude
+  examples: |
+    - Thank you so much!
+    - Thanks a lot for your help
+    - I appreciate the advice
+    - You're very helpful, thank you
+    - Thanks for the support
+    - I really appreciate your guidance
+    - I'm grateful for your assistance
+    - Thanks for the valuable information
+    - Thank you for being there
+    - I feel better now, thanks

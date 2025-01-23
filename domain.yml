@@ -8,27 +8,107 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_heart_health
+  - book_appointment
+  - provide_symptoms
+  - report_emergency
+  - ask_lifestyle_changes
+  - ask_medication_info
+  - reschedule_appointment
+  - ask_diet_advice
+  - follow_up_symptoms
+  - ask_general_info
+  - seek_emotional_support
+  - check_doctor_availability
+  - express_gratitude
+
+entities:
+  - symptoms
+  - appointment_date
+  - appointment_time
+  - medication_name
+  - diet_preference
+
+slots:
+  symptoms:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: symptoms
+
+  appointment_date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: appointment_date
+
+  appointment_time:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: appointment_time
+
+  medication_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: medication_name
+
+  diet_preference:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: diet_preference
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
+    - text: "Hello! How can I assist you with your heart health today?"
   utter_goodbye:
-  - text: "Bye"
+    - text: "Goodbye! Take care!"
+  utter_affirm:
+    - text: "Great!"
+  utter_deny:
+    - text: "Okay, let me know if there's anything else."
+  utter_mood_great:
+    - text: "That's awesome to hear!"
+  utter_mood_unhappy:
+    - text: "I'm sorry to hear that. How can I help?"
+  utter_heart_health_tips:
+    - text: "Here are some tips for maintaining a healthy heart: exercise regularly, eat a balanced diet, and manage stress effectively."
+  utter_thank_you:
+    - text: "You're welcome! Take care and stay healthy!"
+  utter_emergency_contact:
+    - text: "It seems you're experiencing an emergency. Please call your nearest emergency services immediately!"
+  utter_lifestyle_advice:
+    - text: "To improve your heart health, consider reducing salt intake, exercising daily, and avoiding smoking."
+  utter_medication_details:
+    - text: "For detailed medication advice, please consult your doctor. Let me know if you want help scheduling an appointment."
+  utter_diet_tips:
+    - text: "A heart-healthy diet includes fruits, vegetables, whole grains, lean protein, and minimal salt or sugar."
+  utter_general_info:
+    - text: "Heart health involves maintaining healthy blood pressure, cholesterol levels, and staying active. How can I help further?"
+  utter_emotional_support:
+    - text: "I understand this can be overwhelming. Remember, you're not alone. Take one step at a time, and we're here to help."
+  action_schedule_appointment:
+    - text: "Let me help you book an appointment. Can you provide a preferred date and time?"
+  action_reschedule_appointment:
+    - text: "I can reschedule your appointment. Please share the new date and time."
+  action_record_symptoms:
+    - text: "Got it! I'll note your symptoms. A doctor can provide you with more precise advice."
+  action_check_availability:
+    - text: "I'll check the doctor's availability. Please wait a moment."
+  utter_bot_challenge:
+    - text: "I'm a virtual assistant here to help you with heart health-related questions!"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_schedule_appointment
+  - action_reschedule_appointment
+  - action_record_symptoms
+  - action_check_availability
+  - action_symptom_follow_up
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+

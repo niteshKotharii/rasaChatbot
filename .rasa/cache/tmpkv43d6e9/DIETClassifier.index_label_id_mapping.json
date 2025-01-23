@@ -1,0 +1,22 @@
+{
+  "0": "affirm",
+  "1": "ask_diet_advice",
+  "2": "ask_general_info",
+  "3": "ask_heart_health",
+  "4": "ask_lifestyle_changes",
+  "5": "ask_medication_info",
+  "6": "book_appointment",
+  "7": "bot_challenge",
+  "8": "check_doctor_availability",
+  "9": "deny",
+  "10": "express_gratitude",
+  "11": "follow_up_symptoms",
+  "12": "goodbye",
+  "13": "greet",
+  "14": "mood_great",
+  "15": "mood_unhappy",
+  "16": "provide_symptoms",
+  "17": "report_emergency",
+  "18": "reschedule_appointment",
+  "19": "seek_emotional_support"
+}

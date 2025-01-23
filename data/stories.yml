@@ -2,29 +2,102 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: greet_user
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+- story: provide_heart_health_advice
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: ask_heart_health
+  - action: utter_heart_health_tips
 
-- story: sad path 2
+- story: book_appointment
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: book_appointment
+  - action: action_schedule_appointment
+
+- story: provide_symptoms
+  steps:
+  - intent: provide_symptoms
+  - action: action_record_symptoms
+
+- story: report_emergency
+  steps:
+  - intent: report_emergency
+  - action: utter_emergency_contact
+
+- story: ask_lifestyle_changes
+  steps:
+  - intent: ask_lifestyle_changes
+  - action: utter_lifestyle_advice
+
+- story: ask_medication_info
+  steps:
+  - intent: ask_medication_info
+  - action: utter_medication_details
+
+- story: reschedule_appointment
+  steps:
+  - intent: reschedule_appointment
+  - action: action_reschedule_appointment
+
+- story: ask_diet_advice
+  steps:
+  - intent: ask_diet_advice
+  - action: utter_diet_tips
+
+- story: follow_up_symptoms
+  steps:
+  - intent: follow_up_symptoms
+  - action: action_symptom_follow_up
+
+- story: ask_general_info
+  steps:
+  - intent: ask_general_info
+  - action: utter_general_info
+
+- story: seek_emotional_support
+  steps:
+  - intent: seek_emotional_support
+  - action: utter_emotional_support
+
+- story: check_doctor_availability
+  steps:
+  - intent: check_doctor_availability
+  - action: action_check_availability
+
+- story: express_gratitude
+  steps:
+  - intent: express_gratitude
+  - action: utter_thank_you
+
+- story: Goodbye conversation
+  steps:
+  - intent: goodbye
   - action: utter_goodbye
+
+- story: Affirmation response
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- story: Denial response
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- story: Respond to great mood
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- story: Respond to unhappy mood
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: Bot challenge response
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
