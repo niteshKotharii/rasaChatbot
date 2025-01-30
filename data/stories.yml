@@ -101,3 +101,204 @@ stories:
   steps:
   - intent: bot_challenge
   - action: utter_bot_challenge
+
+- story: Respond to intent_0
+  steps:
+  - intent: intent_0
+  - action: utter_0
+- story: Respond to intent_1
+  steps:
+  - intent: intent_1
+  - action: utter_1
+- story: Respond to intent_2
+  steps:
+  - intent: intent_2
+  - action: utter_2
+- story: Respond to intent_3
+  steps:
+  - intent: intent_3
+  - action: utter_3
+- story: Respond to intent_4
+  steps:
+  - intent: intent_4
+  - action: utter_4
+- story: Respond to intent_5
+  steps:
+  - intent: intent_5
+  - action: utter_5
+- story: Respond to intent_6
+  steps:
+  - intent: intent_6
+  - action: utter_6
+- story: Respond to intent_7
+  steps:
+  - intent: intent_7
+  - action: utter_7
+- story: Respond to intent_8
+  steps:
+  - intent: intent_8
+  - action: utter_8
+- story: Respond to intent_9
+  steps:
+  - intent: intent_9
+  - action: utter_9
+- story: Respond to intent_10
+  steps:
+  - intent: intent_10
+  - action: utter_10
+- story: Respond to intent_11
+  steps:
+  - intent: intent_11
+  - action: utter_11
+- story: Respond to intent_12
+  steps:
+  - intent: intent_12
+  - action: utter_12
+- story: Respond to intent_13
+  steps:
+  - intent: intent_13
+  - action: utter_13
+- story: Respond to intent_14
+  steps:
+  - intent: intent_14
+  - action: utter_14
+- story: Respond to intent_15
+  steps:
+  - intent: intent_15
+  - action: utter_15
+- story: Respond to intent_16
+  steps:
+  - intent: intent_16
+  - action: utter_16
+- story: Respond to intent_17
+  steps:
+  - intent: intent_17
+  - action: utter_17
+- story: Respond to intent_18
+  steps:
+  - intent: intent_18
+  - action: utter_18
+- story: Respond to intent_19
+  steps:
+  - intent: intent_19
+  - action: utter_19
+- story: Respond to intent_20
+  steps:
+  - intent: intent_20
+  - action: utter_20
+- story: Respond to intent_21
+  steps:
+  - intent: intent_21
+  - action: utter_21
+- story: Respond to intent_22
+  steps:
+  - intent: intent_22
+  - action: utter_22
+- story: Respond to intent_23
+  steps:
+  - intent: intent_23
+  - action: utter_23
+- story: Respond to intent_24
+  steps:
+  - intent: intent_24
+  - action: utter_24
+- story: Respond to intent_25
+  steps:
+  - intent: intent_25
+  - action: utter_25
+- story: Respond to intent_26
+  steps:
+  - intent: intent_26
+  - action: utter_26
+- story: Respond to intent_27
+  steps:
+  - intent: intent_27
+  - action: utter_27
+- story: Respond to intent_28
+  steps:
+  - intent: intent_28
+  - action: utter_28
+- story: Respond to intent_29
+  steps:
+  - intent: intent_29
+  - action: utter_29
+- story: Respond to intent_30
+  steps:
+  - intent: intent_30
+  - action: utter_30
+- story: Respond to intent_31
+  steps:
+  - intent: intent_31
+  - action: utter_31
+- story: Respond to intent_32
+  steps:
+  - intent: intent_32
+  - action: utter_32
+- story: Respond to intent_33
+  steps:
+  - intent: intent_33
+  - action: utter_33
+- story: Respond to intent_34
+  steps:
+  - intent: intent_34
+  - action: utter_34
+- story: Respond to intent_35
+  steps:
+  - intent: intent_35
+  - action: utter_35
+- story: Respond to intent_36
+  steps:
+  - intent: intent_36
+  - action: utter_36
+- story: Respond to intent_37
+  steps:
+  - intent: intent_37
+  - action: utter_37
+- story: Respond to intent_38
+  steps:
+  - intent: intent_38
+  - action: utter_38
+- story: Respond to intent_39
+  steps:
+  - intent: intent_39
+  - action: utter_39
+- story: Respond to intent_40
+  steps:
+  - intent: intent_40
+  - action: utter_40
+- story: Respond to intent_41
+  steps:
+  - intent: intent_41
+  - action: utter_41
+- story: Respond to intent_42
+  steps:
+  - intent: intent_42
+  - action: utter_42
+- story: Respond to intent_43
+  steps:
+  - intent: intent_43
+  - action: utter_43
+- story: Respond to intent_44
+  steps:
+  - intent: intent_44
+  - action: utter_44
+- story: Respond to intent_45
+  steps:
+  - intent: intent_45
+  - action: utter_45
+- story: Respond to intent_46
+  steps:
+  - intent: intent_46
+  - action: utter_46
+- story: Respond to intent_47
+  steps:
+  - intent: intent_47
+  - action: utter_47
+- story: Respond to intent_48
+  steps:
+  - intent: intent_48
+  - action: utter_48
+- story: Respond to intent_49
+  steps:
+  - intent: intent_49
+  - action: utter_49

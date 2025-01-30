@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-appointment_date",
+      "2": "I-appointment_date",
+      "3": "L-appointment_date",
+      "4": "U-appointment_date",
+      "5": "B-appointment_time",
+      "6": "I-appointment_time",
+      "7": "L-appointment_time",
+      "8": "U-appointment_time",
+      "9": "B-diet_preference",
+      "10": "I-diet_preference",
+      "11": "L-diet_preference",
+      "12": "U-diet_preference",
+      "13": "B-medication_name",
+      "14": "I-medication_name",
+      "15": "L-medication_name",
+      "16": "U-medication_name",
+      "17": "B-symptoms",
+      "18": "I-symptoms",
+      "19": "L-symptoms",
+      "20": "U-symptoms",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-appointment_date": 1,
+      "I-appointment_date": 2,
+      "L-appointment_date": 3,
+      "U-appointment_date": 4,
+      "B-appointment_time": 5,
+      "I-appointment_time": 6,
+      "L-appointment_time": 7,
+      "U-appointment_time": 8,
+      "B-diet_preference": 9,
+      "I-diet_preference": 10,
+      "L-diet_preference": 11,
+      "U-diet_preference": 12,
+      "B-medication_name": 13,
+      "I-medication_name": 14,
+      "L-medication_name": 15,
+      "U-medication_name": 16,
+      "B-symptoms": 17,
+      "I-symptoms": 18,
+      "L-symptoms": 19,
+      "U-symptoms": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
