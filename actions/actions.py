@@ -2,7 +2,8 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
-
+import requests
+    
 class ActionScheduleAppointment(Action):
     def name(self) -> Text:
         return "action_schedule_appointment"
@@ -64,4 +65,32 @@ class ActionSymptomFollowUp(Action):
             dispatcher.utter_message(text="I don't have any recorded symptoms for you. Could you share them with me?")
         return []
 
-# Add more custom actions as required
+
+class ActionCallOllama(Action):
+    def name(self) -> Text:
+        return "action_call_ollama"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Get user message
+        user_message = tracker.latest_message.get("text")
+
+        # Call Ollama API
+        ollama_url = "http://localhost:11434/api/generate"  # Ollama API endpoint
+        payload = {
+            "model": "llama2",  # Replace with your model name
+            "prompt": user_message,
+            "stream": False  # Disable streaming for simplicity
+        }
+
+        try:
+            response = requests.post(ollama_url, json=payload)
+            if response.status_code == 200:
+                # Extract the generated response
+                generated_text = response.json().get("response")
+                dispatcher.utter_message(text=generated_text)
+            else:
+                dispatcher.utter_message(text="Sorry, I couldn't generate a response.")
+        except Exception as e:
+            dispatcher.utter_message(text=f"An error occurred: {str(e)}")
+
+        return []
